@@ -55,7 +55,7 @@
     <!-- Countdown -->
     <section id="countdown" class="space-y-6">
       <h2 class="text-3xl font-bold">Countdown to Us</h2>
-      <p class="text-gray-700">We meet on <strong>15 November 2025</strong>.</p>
+      <p class="text-gray-700">We meet on <strong>25 November 2025, 4:30 PM</strong>.</p>
       <div class="glass rounded-2xl p-8 border flex flex-wrap items-center justify-center gap-6 text-center">
         <div>
           <div class="text-5xl font-bold" id="dd">--</div>
@@ -186,7 +186,7 @@ function updateClocks(){
 setInterval(updateClocks, 1000); updateClocks();
 
 // Countdown (UTC-safe)
-var targetUTCms = Date.UTC(2025, 10, 15, 0, 0, 0); // Nov (10)
+var targetUTCms = Date.UTC(2025, 10, 25, 15, 30, 0);
 function tick(){
   var nowms = Date.now();
   var diff = Math.max(0, targetUTCms - nowms);
